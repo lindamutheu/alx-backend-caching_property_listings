@@ -3,9 +3,8 @@
 
 from django.core.cache import cache
 from .models import Property
-from typing import Any
 
-def get_all_properties() -> Any:
+def get_all_properties():
     """
     Get all Property objects from cache or database.
 
