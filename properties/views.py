@@ -10,4 +10,4 @@ from .models import Property
 def property_list(request):
     """Return a list of all properties (cached)"""
     properties = list(Property.objects.values())
-    return JsonResponse(properties, safe=False)
+    return JsonResponse({"data": properties}, safe=False)
